@@ -1,0 +1,20 @@
+{
+  "name": "music",
+  "version": "1.0.0",
+  "description": "A simple private music bot to temporary replace rythm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.5.3",
+    "@discordjs/voice": "^0.6.0",
+    "discord.js": "^13.1.0",
+    "ffmpeg-static": "^4.4.0",
+    "sodium": "^3.0.2",
+    "youtube-mp3-downloader": "^0.7.7",
+    "youtube-search-without-api-key": "^1.0.6"
+  }
+}
