@@ -1,5 +1,9 @@
 const fs = require('fs');
-const { prefix, token } = require('./config.json') ?? { prefix: process.env.PREFIX, token: process.env.TOKEN };
+
+const { prefix, token } = ('TOKEN' in process.env) ?
+     { prefix: process.env.PREFIX, token: process.env.TOKEN } :
+     require('./config.json');
+
 const { Client, Intents } = require('discord.js');
 const client = new Client({
     intents: [
