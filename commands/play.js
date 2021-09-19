@@ -70,5 +70,7 @@ module.exports = {
             message.reply('Désolé, mais il y a eu une erreur.');
         }
         connection.subscribe(player);
+
+        player.on('error', console.error);
     }
 }
