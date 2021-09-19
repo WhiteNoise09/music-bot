@@ -31,3 +31,9 @@ fs.readdirSync('./events').forEach(file => {
 });
 
 client.login(token);
+
+client.on('error', console.error);
+
+process.on('uncaughtException', console.error);
+
+process.on('unhandledRejection', console.error);
